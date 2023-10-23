@@ -2,6 +2,72 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Apex Replay Debugger",
+      "type": "apex-replay",
+      "request": "launch",
+      "logFile": "${command:AskForLogFileName}",
+      "stopOnEntry": true,
+      "trace": true
+    },
+
+    {
+      "args": [
+        "task"
+      ],
+      "name": "Gulp task",
+      "program": "${workspaceFolder}/node_modules/gulp/bin/gulp.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+
+    
+    {
+      "name": "Launch Edge",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Apex Replay Debugger",
+      "type": "apex-replay",
+      "request": "launch",
+      "logFile": "${command:AskForLogFileName}",
+      "stopOnEntry": true,
+      "trace": true
+    },
+    {
+      "name": "Launch Apex Replay Debugger",
+      "type": "apex-replay",
+      "request": "launch",
+      "logFile": "${command:AskForLogFileName}",
+      "stopOnEntry": true,
+      "trace": true
+    },
+    integratedTerminal
+
+    configurations
+    cwd
+    integratedTerminal
+    configurations
+
+    .
+
+
+
+
+
+    {
       "name": "Run application",
       "type": "node",
       "request": "launch",
@@ -12,7 +78,7 @@
         "run-script",
         "start"
       ],
-      "skipFiles": [
+      "skipFiles": [*
         "<node_internals>/**"
       ]
     }
